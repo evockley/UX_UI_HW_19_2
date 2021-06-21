@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/nst2kjg.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nst2kjg.css">
+
+    <title>Evan Vockley | Say Hi! </title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item logo">
+                    <a href="index.html"><img src="images/ev-logo.png" alt="Logo" width="150px"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item toggle">
+                    <img src="images/menu-icon.png" alt="Logo"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ____________________________________CONTACT FORM____________________________________ -->
+    <section class="standard-section">
+        <div>
+            <h1>Contact</h1>
+        </div>
+
+        <form action="https://formspree.io/f/meqvkdno" method="POST" class="contact-form">
+            <div class="contact-container">
+                <div class="contact-subgrid">
+                    <div id="name">
+                        <label for="name">Your Name</label>
+                        <input type="text" for="name" placeholder="ex. John Smith">
+                    </div>
+
+                    <div id="email">
+                        <label for="email">Your Email</label>
+                        <input type="text" name="_replyto" placeholder="example@email.com" />
+                    </div>
+
+                    <div id="subject">
+                        <label for="subject">Subject</label>
+                        <input type="text" for="subject" placeholder="Let's Chat!">
+                        <input type="hidden" name="_subject" value="New submission!" />
+                    </div>
+                </div>
+                <div id="message">
+                    <div>
+                        <label for="mesasge">Your Message</label>
+                    </div>
+                    <div>
+                        <textarea name="message" id="message-field" placeholder="Your awesome message to me"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="button-container">
+            <button class="primary-button">Say Hi!</button>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer_grid">
+            <div class="footer-name-grid">
+                <p class="footertext">
+                    Evan Vockley
+                </p>
+                <p class="footertext">
+                    UX Design
+                </p>
+                <p class="footertext">
+                    2021
+                </p>
+            </div>
+            <div><button class="primary-button">Say Hi!</button>
+            </div>
+            <div class="logo-grid">
+                <img class="logo-grid-item" src="images/LinkedIn.png" alt="LinkedIn Logo" width=32px>
+                <img class="logo-grid-item" src="images/Dribbble.png" alt="Dribbble Logo" width=32px>
+                <img class="logo-grid-item" src="images/Instagram.png" alt="Instagram Logo" width=32px>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
