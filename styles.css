@@ -137,6 +137,13 @@ p {
     padding-right: 100px;
     display: none;
 }
+.close {
+    position: absolute;
+    right: 32px;
+    top:1.6em;
+    padding-right: 100px;
+    display: none;
+}
 
 /* ------------------------------Buttons---------------------------------
 ------------------------------------Buttons---------------------------------
@@ -1056,6 +1063,14 @@ _________________________________***Nav Bar***____________________***Nav Bar***_
         display:flex;
         padding-right: 0px;
         cursor: pointer;
+        
+    }
+    .close {
+        right: 32px;
+        top:1.6em;
+        padding-right: 0px;
+        cursor: pointer;
+        display: none;
     }
     .nav-item {
         width: 100%;
