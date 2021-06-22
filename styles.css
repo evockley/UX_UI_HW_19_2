@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    font-family: brandon-grotesque, sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 3em;
@@ -68,7 +68,7 @@ h6 {
 }
 
 p {
-    font-family: brandon-grotesque, sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.1em;
@@ -114,7 +114,7 @@ p {
 
 .nav-item {
     list-style: none;
-    font-family: "brandon grotesque";
+    font-family: "brandon-grotesque";
     font-size: 1.3rem;
     padding: 0;
 }
@@ -156,7 +156,7 @@ p {
     border-radius: 8px;
     box-sizing: border-box;
     width: 250px;
-    font-family: 'brandon-groteque', sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: 800;
     font-size: 19px;
     letter-spacing: .15em;
@@ -323,7 +323,7 @@ p {
 }
 
 .footertext {
-    font-family: 'brandon grotesque';
+    font-family: "brandon-grotesque";
     font-size: 16px;
     color: #f6f6f6;
     font-weight: 400;
@@ -703,7 +703,7 @@ hr {
 
 .process-item li {
     list-style: square;
-    font-family: "brandon grotesque";
+    font-family: "brandon-grotesque";
 }
 
 .process-item ul {
@@ -711,7 +711,7 @@ hr {
 }
 
 .process-item a {
-    font-family: "brandon grotesque";
+    font-family: "brandon-grotesque";
     justify-self: start;
     align-self: center;
 }
@@ -1031,7 +1031,7 @@ _________________________________MEDIA QUERIES____________________MEDIA QUERIES_
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-family: brandon-grotesque, sans-serif;
+        font-family: "brandon-grotesque", sans-serif;
         font-weight: 900;
         font-style: normal;
         font-size: 2em;
@@ -1116,7 +1116,7 @@ _________________________________***Footer***____________________***Footer***___
     .footertext {
         display: inline;
         margin: 10px 8px;
-        font-family: 'brandon grotesque';
+        font-family: "brandon-grotesque";
         font-size: 16px;
         color: #f6f6f6;
         font-weight: 400;
