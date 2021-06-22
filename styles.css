@@ -71,7 +71,7 @@ p {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1em;
+    font-size: 22px;
     font-kerning: 7px;
     line-height: 1.5em;
     color: #192E10;
@@ -214,7 +214,7 @@ p {
     justify-content: center;
     align-items: center;
     margin-bottom: 150px;
-    margin-top: 14vh;
+    margin-top: 8vh;
     margin-left: 100px;
     margin-right: 100px;
     column-gap: 12vw;
@@ -394,8 +394,8 @@ p {
 -----------------------------------------------------Contact--------------------------------------------------*/
 
 .standard-section {
-    padding-top: 10vh;
-    padding-bottom: 64px;
+    padding-top: 8vh;
+    padding-bottom: 48px;
     background-color: #FCF7F2;
     padding-left: 100px;
     padding-right: 100px;
@@ -759,7 +759,7 @@ hr {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 24px;
-    width: 75%;
+    width: 100%;
     column-gap: 5%;
     row-gap: 24px;
     margin: 8px 0 56px 0;
