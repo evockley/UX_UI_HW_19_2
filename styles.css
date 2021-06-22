@@ -97,25 +97,32 @@ p {
 ----------------------------------------------Nav Bar------------------------------------------
 ---------------------------------Nav Bar------------------------------------------------------- */
 
-.nav-list {
+.navbar {
     background-color: #FCF7F2;
-    margin: 0;
-    padding: 16px 100px 0 100px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    padding: 16px 100px;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-item {
     list-style: none;
     font-family: "brandon grotesque";
     font-size: 1.3rem;
-    margin-right: 3rem;
+    padding: 0;
 }
 
 .nav-item a {
     text-decoration: none;
     color: #192E10;
+    padding-left: 2em;
     transition: ease-in 250ms;
 }
 
@@ -123,11 +130,11 @@ p {
     color: #D68D1F;
 }
 
-.nav-item:first-child {
-    margin-right: auto;
-}
-
 .toggle {
+    position: absolute;
+    right: 32px;
+    top:1.6em;
+    padding-right: 100px;
     display: none;
 }
 
@@ -659,10 +666,7 @@ hr {
     display: grid;
     grid-template-columns: .75fr 1.25fr;
     grid-template-rows: .25fr .75fr .75fr;
-    grid-template-areas:
-    "process-heading process-heading"
-    "list1 list3"
-    "list2 link";
+    grid-template-areas: "process-heading process-heading" "list1 list3" "list2 link";
     box-shadow: #98989820 0 0 10px;
     border-radius: 10px;
     border-style: solid;
@@ -670,19 +674,23 @@ hr {
     border-width: .5px;
 }
 
-.process-heading{
+.process-heading {
     grid-area: process-heading;
 }
-.process-list1{
+
+.process-list1 {
     grid-area: list1;
 }
-.process-list2{
+
+.process-list2 {
     grid-area: list2;
 }
-.process-list3{
+
+.process-list3 {
     grid-area: list3;
 }
-.process-link{
+
+.process-link {
     grid-area: link;
 }
 
@@ -1039,6 +1047,33 @@ _________________________________MEDIA QUERIES____________________MEDIA QUERIES_
     }
     /* ___________________________***Nav Bar***_______________***Nav Bar***_________________________
 _________________________________***Nav Bar***____________________***Nav Bar***_______________________ */
+    .navbar {
+        padding: 16px 32px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle {
+        display:flex;
+        padding-right: 0px;
+        cursor: pointer;
+    }
+    .nav-item {
+        width: 100%;
+        padding: 8px 0;
+        display: none; 
+        justify-content: center;
+    }
+
+    .nav-list{
+        text-align: center;
+        
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        padding-top: 12px;
+    }
+    .nav-list a {padding:0;
+    }
     /* ___________________________***Footer***_______________***Footer***_________________________
 _________________________________***Footer***____________________***Footer***_______________________ */
     .footer {
@@ -1303,7 +1338,7 @@ _________________________________***GoCreate Redesign <768***___________________
         gap: 16px;
         overflow-x: scroll;
         scroll-snap-type: x proximity;
-        padding: 16px 0 0 32px ;
+        padding: 16px 0 0 32px;
     }
     .process-item {
         width: 80vw;
@@ -1314,44 +1349,34 @@ _________________________________***GoCreate Redesign <768***___________________
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: .25fr .5fr .5fr.25fr;
-        grid-template-areas:
-        "process-heading"
-        "list1"
-        "list2"
-        "list3" 
-        "link";
+        grid-template-areas: "process-heading" "list1" "list2" "list3" "link";
         box-shadow: #98989820 0 0 10px;
         border-radius: 10px;
         border-style: solid;
         border-color: #09150330;
-        border-width: .5px;;
+        border-width: .5px;
+        ;
     }
-
-
-.process-item ul {
-    font-size: .9em;
+    .process-item ul {
+        font-size: .9em;
+    }
+    .process-item h3 {
+        margin: 10px 0;
+    }
+    .process-item h4 {
+        margin: 8px 0;
+    }
+    .process-item p {
+        margin: 8px 0;
+    }
+    .process-item a {
+        margin: 16px 0 0 0;
+    }
+    .scroll-group {
+        background-color: #FCF7F2;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
-.process-item h3 {
-    margin: 10px 0;
-}
-
-.process-item h4 {
-    margin: 8px 0;
-}
-
-.process-item p {
-    margin: 8px 0;
-}
-
-.process-item a {
-    margin: 16px 0 0 0;
-}
-
-.scroll-group {
-    background-color: #FCF7F2;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-};
+;
