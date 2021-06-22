@@ -915,18 +915,20 @@ hr {
 
 .skills-container {
     display: flex;
+    flex-wrap: wrap;
+    gap:24px;
     margin: 0;
     padding: 0;
     justify-content: space-between;
     background-repeat: no-repeat;
 }
 
-.skills-container div {
+.individual-skill {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     max-width: 25vw;
-    min-width: 20vw;
+    min-width: 25vw;
     justify-content: top;
 }
 
@@ -1038,6 +1040,16 @@ _________________________________MEDIA QUERIES____________________MEDIA QUERIES_
         color: #192E10;
         margin: 8px 0;
     }
+
+    h2 {
+        font-family: "neuzeit-grotesk", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.5em;
+        color: #192E10;
+        margin: 8px 0 16px;
+    }
+
     .primary-button {
         font-size: 1.15em;
         width: 295px;
@@ -1260,12 +1272,65 @@ _________________________________***PROJECTS <768***____________________***PROJE
 
 /* ___________________________***  ABOUT  <768***_______________***  ABOUT  <768***_________________________
 _________________________________***  ABOUT  <768***____________________***  ABOUT  <768***_______________________ */
-    .skills-section {
-        background-image: linear-gradient(180deg, #192E10, #091503);
-        background-repeat: no-repeat;
-        width: vw;
-        padding: 20vh 32px
+  
+    .about-hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 274px 1fr .7fr;
+        grid-template-areas: "heading" "photo" "p1" "p2";
+        margin-top: 0;
+        row-gap: 32px;
     }
+    .about-hero img{
+        max-width: 250px;
+        align-self: top;
+        justify-self: center;
+        margin-bottom: 16px;
+    }
+  .about-hero p{
+      margin: 0;
+  }
+  .skills-section {
+    background-image: linear-gradient(180deg, #192E10, #091503);
+    background-repeat: no-repeat;
+    width: vw;
+    padding:5vh 32px 5vh 32px 
+}
+.skills-container{
+    gap:5vh;
+}
+  .individual-skill {
+    display: flex;
+    flex-wrap:wrap;
+    gap:0px;
+    min-width: 100%;
+    justify-content: top;
+}
+.tools {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px .75fr .75fr .75fr;
+    grid-template-areas: "tools-heading" "logos" "p1" "p2";
+}
+.learning-now-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px .5fr .5fr 1fr;
+    column-gap: 15%;
+    grid-template-areas: "learning-header" "p1" "p2" "right-side";
+}
+#learning-now-right div {
+    display: flex;
+    justify-content: space-between;
+}
+#learning-now-right p {
+    margin:6px 0 4px 0;
+}
+#learning-now-right h5 {
+    margin:6px 0 4px 0;
+}
+
+
 
 
 
