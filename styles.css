@@ -217,7 +217,7 @@ p {
     margin-top: 14vh;
     margin-left: 100px;
     margin-right: 100px;
-    column-gap: 17vw;
+    column-gap: 12vw;
     position: sticky;
     top: 24vh;
 }
@@ -231,7 +231,7 @@ p {
 .moreinfo {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 137%;
     letter-spacing: .02em;
     margin-bottom: 32px;
@@ -239,7 +239,7 @@ p {
 }
 
 .grid_item_1 {
-    width: 45%;
+    width: 55%;
 }
 
 .grid_item_1 .primary-button {
