@@ -158,8 +158,8 @@ p {
     width: 250px;
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 800;
-    font-size: 19px;
-    letter-spacing: .15em;
+    font-size: 1.3em;
+    letter-spacing: .1em;
     padding-right: 35px;
     padding-left: 35px;
     padding-top: 12px;
@@ -906,8 +906,7 @@ hr {
     background-image: linear-gradient(180deg, #192E10, #091503);
     background-repeat: no-repeat;
     width: vw;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding: 20vh 100px
 }
 
 .skills-section h2 {
@@ -1040,9 +1039,9 @@ _________________________________MEDIA QUERIES____________________MEDIA QUERIES_
         margin: 8px 0;
     }
     .primary-button {
-        font-size: .9em;
+        font-size: 1.15em;
         width: 295px;
-        letter-spacing: .15em;
+        letter-spacing: .1em;
     }
     .secondary-button {
         font-size: .9em;
@@ -1253,6 +1252,23 @@ _________________________________***PROJECTS <768***____________________***PROJE
     .project-container {
         align-items: center;
     }
+    .standard-section{
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+
+
+/* ___________________________***  ABOUT  <768***_______________***  ABOUT  <768***_________________________
+_________________________________***  ABOUT  <768***____________________***  ABOUT  <768***_______________________ */
+    .skills-section {
+        background-image: linear-gradient(180deg, #192E10, #091503);
+        background-repeat: no-repeat;
+        width: vw;
+        padding: 20vh 32px
+    }
+
+
+
     /* ___________________________***GoCreate Redesign <768***_______________***GoCreate Redesign <768***_________________________
 _________________________________***GoCreate Redesign <768***____________________***GoCreate Redesign <768***_______________________ */
     .individual-section {
